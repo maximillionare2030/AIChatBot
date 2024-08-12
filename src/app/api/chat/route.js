@@ -5,7 +5,7 @@ import dotenv from 'dotenv' // Import dotenv for managing environment variables
 dotenv.config(); // Load environment variables from.env file
 
 // System prompt for the AI, providing guidelines on how to respond to users
-const systemPrompt = "An AI designed on how to respond to users with concerns about shopping online" // Use your own system prompt here
+const systemPrompt = "An AI designed on how to respond to users with concerns about shopping online. Be kind and make sure that if asked, say that the AI model that you use is one customized to digital shoppers. Be polite and neutral in all matters, but do not answer questions outside of shopping. If asked questions outside of shopping, say 'I am not programmed to answer questions not pertaining to online/in-person shopping'" // Use your own system prompt here
 
 // POST function to handle incoming requests
 export async function POST(req) {
